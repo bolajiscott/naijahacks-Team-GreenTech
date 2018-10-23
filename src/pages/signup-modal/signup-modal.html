@@ -1,0 +1,58 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <!-- <ion-title>Sign Up</ion-title> -->
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+          <span ion-text color="primary" showWhen="ios">Cancel</span>
+          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="loginForm" *ngIf="formType == 'signupForm'">
+
+    <form [formGroup]="signupForm">
+        <h3 text-center>Sign Up</h3>
+      <ion-list padding>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="user.name" formControlName="name" placeholder="Full Name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="user.email" formControlName="email" placeholder="Email"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="user.farmLocation" formControlName="farmLocation" placeholder="Farm Location"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="tel" [(ngModel)]="user.phone"  formControlName="phone" placeholder="Telephone"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button round block color="secondary" [disabled]="!signupForm.valid" (click)="submit()">Submit</button>
+    </form>
+  </div>
+
+  <div class="loginForm" *ngIf="formType == 'loginForm'">
+    <form [formGroup]="loginForm">
+        <h3 text-center>Login</h3>
+      <ion-list padding>
+        <ion-item>
+          <ion-input type="text" formControlName="username" placeholder="Username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+      <button ion-button round block color="secondary" [disabled]="!loginForm.valid" (click)="login()">Login</button>
+    </form>
+  </div>
+</ion-content>
