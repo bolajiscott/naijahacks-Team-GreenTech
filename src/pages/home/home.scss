@@ -1,0 +1,39 @@
+page-home {
+    div.scroll-content{
+        padding: 0px !important;
+    }
+    div.container{
+        width: 100%;
+        height: 100%;
+    }
+    div#img-hero{
+        background-image: url('/assets/imgs/greentech-bg.jpeg');
+        width: 100%;
+        height: 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .flex-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.main{
+        background-color: #F2994A;
+        width: 100%;
+        height: 60%;
+        padding: 20px;
+        color: #ffff;
+        img{
+            width: 70%;
+        }
+        button{
+            width: 70%;
+            margin-top: 25px;
+        }
+    }
+}
