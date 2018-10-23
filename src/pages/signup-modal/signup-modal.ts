@@ -46,6 +46,6 @@ export class SignupModalPage {
   }
 
   login(){
-
+    this.viewCtrl.dismiss('dashboard')
   }
 }

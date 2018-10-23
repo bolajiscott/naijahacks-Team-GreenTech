@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
 import { SignupModalPage } from '../signup-modal/signup-modal';
+import { DashboardPage } from '../dashboard/dashboard';
 
 @IonicPage()
 @Component({
@@ -21,7 +22,7 @@ export class SignupPage {
     modal.present();
     modal.onDidDismiss(data => {
       if (data) {
-
+        this.navCtrl.setRoot(DashboardPage)
       }
     })
   }

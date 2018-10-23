@@ -5,6 +5,7 @@ import { SignupModalPage } from './signup-modal';
 @NgModule({
   declarations: [
     SignupModalPage,
+
   ],
   imports: [
     IonicPageModule.forChild(SignupModalPage),
