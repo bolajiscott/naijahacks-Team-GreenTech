@@ -13,6 +13,6 @@ export class HomePage {
   }
 
   openSignupPage(){
-    this.navCtrl.push(SignupPage)
+    this.navCtrl.setRoot(SignupPage)
   }
 }

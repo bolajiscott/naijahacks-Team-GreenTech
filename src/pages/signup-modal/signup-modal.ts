@@ -26,7 +26,7 @@ export class SignupModalPage {
     });
 
     this.loginForm =  fb.group({
-      'username': ['', Validators.required],
+      'email': ['', Validators.required],
       'password': ['', Validators.required]
     });
 
@@ -42,7 +42,7 @@ export class SignupModalPage {
   }
 
   submit(){
-    this.navCtrl.setRoot('')
+    this.viewCtrl.dismiss('dashboard')
   }
 
   login(){
