@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FarmsMapPage } from '../farms-map/farms-map';
 
 /**
  * Generated class for the DashboardPage page.
@@ -22,4 +23,7 @@ export class DashboardPage {
     console.log('ionViewDidLoad DashboardPage');
   }
 
+  openMap(){
+    this.navCtrl.push(FarmsMapPage)
+  }
 }
