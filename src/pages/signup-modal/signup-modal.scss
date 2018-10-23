@@ -1,0 +1,10 @@
+page-signup-modal {
+    .scroll-content{
+        color: #fff;
+        padding-top: 100px !important;
+        background-color: color($colors, primary);
+        .item-md{
+            margin-bottom: 20px;
+        }
+    }
+}

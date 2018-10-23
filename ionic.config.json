@@ -1,0 +1,7 @@
+{
+  "name": "greenTech",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

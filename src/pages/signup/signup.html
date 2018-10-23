@@ -1,0 +1,19 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+
+  </ion-header>
+<ion-content padding>
+    <div class="container flex-center">
+      <img id="img-hero" src="assets/imgs/greentech-bg.jpeg" alt="">
+      <div class="main flex-center">
+
+        <button (click)="openSignupModal()" ion-button round color="secondary">Sign Up</button>
+        <button (click)="openLoginModal()" ion-button round color="secondary">Login</button>
+      </div>
+    </div>
+  </ion-content>
